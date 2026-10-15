@@ -29,16 +29,28 @@
         <article class="product">
           <div class="product__visual">
             <div class="product__image-frame">
-              <img
-                class="product__image"
-                src="assets/ananasovij-ulun.jpg"
-                alt="Ананасовый улун — чай с ароматом спелого ананаса"
-                width="900"
-                height="900"
-                fetchpriority="high"
+              <button
+                class="product__image-trigger"
+                type="button"
+                aria-label="Увеличить изображение товара"
               >
+                <img
+                  class="product__image"
+                  src="assets/ananasovij-ulun.jpg"
+                  alt="Ананасовый улун — чай с ароматом спелого ананаса"
+                  width="900"
+                  height="900"
+                  fetchpriority="high"
+                >
+              </button>
               <span class="product__image-label">Чайная коллекция</span>
             </div>
+            <div
+              class="product__thumbnails"
+              id="product-thumbnails"
+              role="group"
+              aria-label="Фотографии товара"
+            ></div>
             <p class="product__image-caption">Светлый улун · Фуцзянь, Китай</p>
           </div>
   
@@ -88,5 +100,28 @@
         </article>
       </div>
     </main>
+
+    <dialog
+      class="product-image-viewer"
+      id="product-image-viewer"
+      aria-label="Просмотр изображения товара"
+    >
+      <div class="product-image-viewer__dialog">
+        <button
+          class="product-image-viewer__close"
+          type="button"
+          aria-label="Закрыть просмотр изображения"
+          autofocus
+        >×</button>
+        <img
+          class="product-image-viewer__image"
+          id="product-image-viewer-image"
+          src="assets/ananasovij-ulun.jpg"
+          alt="Ананасовый улун — чай с ароматом спелого ананаса"
+          width="900"
+          height="900"
+        >
+      </div>
+    </dialog>
   </body>
 </html>
