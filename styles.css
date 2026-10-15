@@ -444,12 +444,6 @@ a:focus-visible {
   transform: scale(0.975);
 }
 
-.button__arrow {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
-}
-
 .description {
   padding-top: 24px;
 }
