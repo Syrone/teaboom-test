@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Ананасовый улун — светлый фуцзяньский чай с ароматом спелого ананаса."
+    >
+    <title>Ананасовый улун — Чайный Бум</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Навигационная цепочка">
+          <a href="#">Каталог</a>
+          <span aria-hidden="true">/</span>
+          <a href="#">Улун</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Ананасовый улун</span>
+        </nav>
+        
+        <article class="product">
+          <div class="product__visual">
+            <div class="product__image-frame">
+              <img
+                class="product__image"
+                src="assets/ananasovij-ulun.jpg"
+                alt="Ананасовый улун — чай с ароматом спелого ананаса"
+                width="900"
+                height="900"
+                fetchpriority="high"
+              >
+              <span class="product__image-label">Чайная коллекция</span>
+            </div>
+            <p class="product__image-caption">Светлый улун · Фуцзянь, Китай</p>
+          </div>
+  
+          <div class="product__details">
+            <p class="product__eyebrow">Ароматизированный улун</p>
+            <h1 class="product__title">Ананасовый улун</h1>
+            <p class="product__subtitle">Свежесть весенней зелени и спелого ананаса</p>
+  
+            <div class="product__sku">
+              <span>Артикул</span>
+              <span class="product__sku-value" id="product-sku">01306</span>
+            </div>
+  
+            <section class="packaging" aria-labelledby="packaging-title">
+              <h2 class="section-label" id="packaging-title">Выберите фасовку</h2>
+              <div
+                class="packaging__options"
+                id="packaging-options"
+                role="group"
+                aria-label="Фасовка товара"
+              ></div>
+            </section>
+  
+            <div class="product__purchase">
+              <div class="product__price-block" aria-live="polite" aria-atomic="true">
+                <span class="product__price" id="current-price">326,40 ₽</span>
+                <span class="product__old-price" id="old-price">349,20 ₽</span>
+              </div>
+              <button class="button button--cart" type="button">
+                <span>В корзину</span>
+                <span class="button__arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+  
+            <section class="description" aria-labelledby="description-title">
+              <h2 class="section-label" id="description-title">О чае</h2>
+              <p>
+                Светлый фуцзяньский улун с ароматом ананаса. В сухом виде —
+                крупный изумрудный лист, а в настое классическая нота улуна
+                встречается с ярким вкусом спелого фрукта.
+              </p>
+              <p class="description__ingredients">
+                Состав: китайский бирюзовый чай, цукаты, натуральные ароматические масла.
+              </p>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
